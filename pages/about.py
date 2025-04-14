@@ -15,7 +15,6 @@ def logout():
 st.set_page_config(page_title="About")
 
 st.markdown("# About")
-st.sidebar.header("About")
 
 if st.session_state.logged_in:
     st.sidebar.success("Logged in")

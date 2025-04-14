@@ -15,7 +15,6 @@ def logout():
 st.set_page_config(page_title="Overview")
 
 st.markdown("# Overview")
-st.sidebar.header("Overview")
 
 if st.session_state.logged_in:
     st.sidebar.success("Logged in")
@@ -34,21 +33,3 @@ st.write(
     All of them have some redundant code that can be abstracted out to make changes easier in the future.
     """
 )
-
-with st.expander("Company Info"):
-    st.write(
-        """
-        Fake Company LLC Inc. is located at 1600 Amphitheatre Parkway Mountain View, CA 94043
-    """
-    )
-
-with st.expander("Links"):
-    st.markdown(
-        """
-        [Google](https://google.com)
-
-        [Gemini](https://gemini.google.com)
-
-        [Streamlit Docs](https://docs.streamlit.io/)
-    """
-    )
